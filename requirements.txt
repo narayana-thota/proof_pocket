@@ -1,3 +1,4 @@
+#requirments.txt
 fastapi
 uvicorn[standard]
 mysql-connector-python
