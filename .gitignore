@@ -1,0 +1,47 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+dist/
+build/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Uploaded documents and generated files
+uploads/
+storage/
+
+
+# Certificates and private keys
+certs/
+*.pem
+*.key
+*.crt
+
+# Test and cache files
+.pytest_cache/
+.mypy_cache/
+.coverage

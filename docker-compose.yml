@@ -1,0 +1,27 @@
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: proofpocket_backend
+    working_dir: /app
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - .:/app
+      - huggingface_cache:/root/.cache/huggingface
+
+    env_file:
+      - .env
+
+    environment:
+      PYTHONPATH: /app/backend
+      HF_HOME: /root/.cache/huggingface
+
+    restart: unless-stopped
+
+volumes:
+  huggingface_cache:
