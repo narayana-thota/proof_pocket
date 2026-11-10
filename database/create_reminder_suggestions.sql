@@ -1,5 +1,5 @@
 -- ProofPocket: AI-generated reminder suggestions
--- Run this once against the same MySQL database used by the backend.
+-- Run this once against the same MySQL database used by the backend .
 
 CREATE TABLE IF NOT EXISTS reminder_suggestions (
     suggestion_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
